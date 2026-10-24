@@ -1,0 +1,13 @@
+# kernel module build
+*.o
+*.ko
+*.mod
+*.mod.c
+.*.cmd
+.module-common.o
+modules.order
+Module.symvers
+.tmp_versions/
+
+# player binary
+player

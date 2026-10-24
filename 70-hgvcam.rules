@@ -1,0 +1,7 @@
+# Copyright (C) 2026 Josemar Simao <josemarsimao@gmail.com>
+# Co-authored with Claude Opus 5.5 (Anthropic) <noreply@anthropic.com>
+#
+# hgvcam control device: lets the logged-in user (uaccess) and the video
+# group create virtual cameras without root.  The player installs this file
+# in /etc/udev/rules.d when it loads the module.
+KERNEL=="hgvcam", SUBSYSTEM=="misc", GROUP="video", MODE="0660", TAG+="uaccess"
